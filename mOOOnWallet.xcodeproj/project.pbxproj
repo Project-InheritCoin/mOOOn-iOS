@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125F1EE7551263EB194E123B /* Pods_mOOOnWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E883B799C6D7E122ED33ACFC /* Pods_mOOOnWallet.framework */; };
 		BA73B13D200B819E0091F050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73B13C200B819E0091F050 /* AppDelegate.swift */; };
-		BA73B13F200B819E0091F050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73B13E200B819E0091F050 /* ViewController.swift */; };
-		BA73B142200B819E0091F050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA73B140200B819E0091F050 /* Main.storyboard */; };
+		BA73B13F200B819E0091F050 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73B13E200B819E0091F050 /* BalanceViewController.swift */; };
 		BA73B144200B819E0091F050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA73B143200B819E0091F050 /* Assets.xcassets */; };
 		BA73B147200B819E0091F050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA73B145200B819E0091F050 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21724854EBC15680A854B2BC /* Pods-mOOOnWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mOOOnWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mOOOnWallet/Pods-mOOOnWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		2F20E4166ABBCC9EE5790951 /* Pods-mOOOnWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mOOOnWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-mOOOnWallet/Pods-mOOOnWallet.release.xcconfig"; sourceTree = "<group>"; };
 		BA73B139200B819E0091F050 /* mOOOnWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mOOOnWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA73B13C200B819E0091F050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA73B13E200B819E0091F050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA73B141200B819E0091F050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA73B13E200B819E0091F050 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
 		BA73B143200B819E0091F050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA73B146200B819E0091F050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA73B148200B819E0091F050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E883B799C6D7E122ED33ACFC /* Pods_mOOOnWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mOOOnWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				125F1EE7551263EB194E123B /* Pods_mOOOnWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1651F6BC3088E3232702B19A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E883B799C6D7E122ED33ACFC /* Pods_mOOOnWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BD889AFEDABB159ECD234D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21724854EBC15680A854B2BC /* Pods-mOOOnWallet.debug.xcconfig */,
+				2F20E4166ABBCC9EE5790951 /* Pods-mOOOnWallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BA73B130200B819E0091F050 = {
 			isa = PBXGroup;
 			children = (
 				BA73B13B200B819E0091F050 /* mOOOnWallet */,
 				BA73B13A200B819E0091F050 /* Products */,
+				5BD889AFEDABB159ECD234D2 /* Pods */,
+				1651F6BC3088E3232702B19A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,8 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				BA73B13C200B819E0091F050 /* AppDelegate.swift */,
-				BA73B13E200B819E0091F050 /* ViewController.swift */,
-				BA73B140200B819E0091F050 /* Main.storyboard */,
+				BA73B13E200B819E0091F050 /* BalanceViewController.swift */,
 				BA73B143200B819E0091F050 /* Assets.xcassets */,
 				BA73B145200B819E0091F050 /* LaunchScreen.storyboard */,
 				BA73B148200B819E0091F050 /* Info.plist */,
@@ -71,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA73B14B200B819E0091F050 /* Build configuration list for PBXNativeTarget "mOOOnWallet" */;
 			buildPhases = (
+				0698A8E543D6A2FF0D5C3436 /* [CP] Check Pods Manifest.lock */,
 				BA73B135200B819E0091F050 /* Sources */,
 				BA73B136200B819E0091F050 /* Frameworks */,
 				BA73B137200B819E0091F050 /* Resources */,
+				A279C3207FEB20643B960B66 /* [CP] Embed Pods Frameworks */,
+				F39C7A9DBFB6BF669897B2BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +149,65 @@
 			files = (
 				BA73B147200B819E0091F050 /* LaunchScreen.storyboard in Resources */,
 				BA73B144200B819E0091F050 /* Assets.xcassets in Resources */,
-				BA73B142200B819E0091F050 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0698A8E543D6A2FF0D5C3436 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A279C3207FEB20643B960B66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mOOOnWallet/Pods-mOOOnWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F39C7A9DBFB6BF669897B2BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mOOOnWallet/Pods-mOOOnWallet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA73B135200B819E0091F050 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA73B13F200B819E0091F050 /* ViewController.swift in Sources */,
+				BA73B13F200B819E0091F050 /* BalanceViewController.swift in Sources */,
 				BA73B13D200B819E0091F050 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BA73B140200B819E0091F050 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA73B141200B819E0091F050 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BA73B145200B819E0091F050 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,10 +335,13 @@
 		};
 		BA73B14C200B819E0091F050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21724854EBC15680A854B2BC /* Pods-mOOOnWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZSN96AVM9;
 				INFOPLIST_FILE = mOOOnWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.mOOOn.mOOOnWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +352,13 @@
 		};
 		BA73B14D200B819E0091F050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F20E4166ABBCC9EE5790951 /* Pods-mOOOnWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZSN96AVM9;
 				INFOPLIST_FILE = mOOOnWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.mOOOn.mOOOnWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";

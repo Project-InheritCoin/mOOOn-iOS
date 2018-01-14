@@ -1,0 +1,20 @@
+PODS:
+  - Geth (1.7.3)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
+
+DEPENDENCIES:
+  - Geth (~> 1.7.3)
+  - RealmSwift (~> 3.0.2)
+
+SPEC CHECKSUMS:
+  Geth: 45a08eeef7a20e58dfc09a455563ffe210941a96
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
+
+PODFILE CHECKSUM: a6aac104e40cabc0a9ce148cd20ef448849910ed
+
+COCOAPODS: 1.2.1
