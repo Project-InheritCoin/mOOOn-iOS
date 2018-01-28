@@ -8,21 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		125F1EE7551263EB194E123B /* Pods_mOOOnWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E883B799C6D7E122ED33ACFC /* Pods_mOOOnWallet.framework */; };
+		BA2B85F6200D760A00FDFA85 /* StandardSyncCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2B85F5200D760A00FDFA85 /* StandardSyncCoordinator.swift */; };
+		BA364C75200CE15F00C06877 /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C74200CE15F00C06877 /* TransactionService.swift */; };
+		BA364C77200CE2AD00C06877 /* TransactionServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C76200CE2AD00C06877 /* TransactionServiceProtocol.swift */; };
+		BA364C79200CE2D900C06877 /* KeystoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C78200CE2D900C06877 /* KeystoreService.swift */; };
+		BA364C7B200CE2F700C06877 /* KeystoreServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C7A200CE2F700C06877 /* KeystoreServiceProtocol.swift */; };
+		BA364C7E200CE3D300C06877 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C7D200CE3D300C06877 /* Chain.swift */; };
+		BA364C80200CE41100C06877 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C7F200CE41100C06877 /* Constants.swift */; };
+		BA364C83200CE4C500C06877 /* Ethereum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C82200CE4C500C06877 /* Ethereum.swift */; };
+		BA364C85200CE51100C06877 /* SyncCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C84200CE51100C06877 /* SyncCoordinatorDelegate.swift */; };
+		BA364C87200CE54900C06877 /* SyncCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C86200CE54900C06877 /* SyncCoordinatorProtocol.swift */; };
+		BA364C89200CE5C800C06877 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C88200CE5C800C06877 /* Errors.swift */; };
+		BA364C8B200CED4200C06877 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C8A200CED4200C06877 /* SendViewController.swift */; };
+		BA364C8D200D661100C06877 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA364C8C200D661100C06877 /* Token.swift */; };
 		BA73B13D200B819E0091F050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73B13C200B819E0091F050 /* AppDelegate.swift */; };
 		BA73B13F200B819E0091F050 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73B13E200B819E0091F050 /* BalanceViewController.swift */; };
 		BA73B144200B819E0091F050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA73B143200B819E0091F050 /* Assets.xcassets */; };
 		BA73B147200B819E0091F050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA73B145200B819E0091F050 /* LaunchScreen.storyboard */; };
+		BAF64E66201D6DB700B4BDD0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF64E65201D6DB700B4BDD0 /* TabBarController.swift */; };
+		BAF64E68201D6E8900B4BDD0 /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF64E67201D6E8900B4BDD0 /* ReceiveViewController.swift */; };
+		BAF64E6A201DDDF000B4BDD0 /* QRCodeServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF64E69201DDDF000B4BDD0 /* QRCodeServiceProtocol.swift */; };
+		BAF64E6C201DDDFA00B4BDD0 /* QRCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF64E6B201DDDFA00B4BDD0 /* QRCodeService.swift */; };
+		BAF64E6E201E04D500B4BDD0 /* WalletInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF64E6D201E04D500B4BDD0 /* WalletInfoTableViewCell.swift */; };
+		BAF64E71201E101100B4BDD0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF64E70201E101100B4BDD0 /* API.swift */; };
+		BAF64E73201E103F00B4BDD0 /* API+Etherscan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF64E72201E103F00B4BDD0 /* API+Etherscan.swift */; };
+		BAF64E75201E12FC00B4BDD0 /* BalanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF64E74201E12FC00B4BDD0 /* BalanceService.swift */; };
+		BAF64E77201E130B00B4BDD0 /* BalanceServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF64E76201E130B00B4BDD0 /* BalanceServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21724854EBC15680A854B2BC /* Pods-mOOOnWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mOOOnWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mOOOnWallet/Pods-mOOOnWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		2F20E4166ABBCC9EE5790951 /* Pods-mOOOnWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mOOOnWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-mOOOnWallet/Pods-mOOOnWallet.release.xcconfig"; sourceTree = "<group>"; };
+		BA2B85F5200D760A00FDFA85 /* StandardSyncCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardSyncCoordinator.swift; sourceTree = "<group>"; };
+		BA364C74200CE15F00C06877 /* TransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
+		BA364C76200CE2AD00C06877 /* TransactionServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionServiceProtocol.swift; sourceTree = "<group>"; };
+		BA364C78200CE2D900C06877 /* KeystoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoreService.swift; sourceTree = "<group>"; };
+		BA364C7A200CE2F700C06877 /* KeystoreServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoreServiceProtocol.swift; sourceTree = "<group>"; };
+		BA364C7D200CE3D300C06877 /* Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		BA364C7F200CE41100C06877 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BA364C82200CE4C500C06877 /* Ethereum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ethereum.swift; sourceTree = "<group>"; };
+		BA364C84200CE51100C06877 /* SyncCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		BA364C86200CE54900C06877 /* SyncCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		BA364C88200CE5C800C06877 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		BA364C8A200CED4200C06877 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		BA364C8C200D661100C06877 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		BA73B139200B819E0091F050 /* mOOOnWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mOOOnWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA73B13C200B819E0091F050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA73B13E200B819E0091F050 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
 		BA73B143200B819E0091F050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA73B146200B819E0091F050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA73B148200B819E0091F050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF64E65201D6DB700B4BDD0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BAF64E67201D6E8900B4BDD0 /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
+		BAF64E69201DDDF000B4BDD0 /* QRCodeServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeServiceProtocol.swift; sourceTree = "<group>"; };
+		BAF64E6B201DDDFA00B4BDD0 /* QRCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeService.swift; sourceTree = "<group>"; };
+		BAF64E6D201E04D500B4BDD0 /* WalletInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletInfoTableViewCell.swift; sourceTree = "<group>"; };
+		BAF64E70201E101100B4BDD0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		BAF64E72201E103F00B4BDD0 /* API+Etherscan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Etherscan.swift"; sourceTree = "<group>"; };
+		BAF64E74201E12FC00B4BDD0 /* BalanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceService.swift; sourceTree = "<group>"; };
+		BAF64E76201E130B00B4BDD0 /* BalanceServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceServiceProtocol.swift; sourceTree = "<group>"; };
 		E883B799C6D7E122ED33ACFC /* Pods_mOOOnWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mOOOnWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,6 +99,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BA364C73200CE13F00C06877 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA364C76200CE2AD00C06877 /* TransactionServiceProtocol.swift */,
+				BA364C74200CE15F00C06877 /* TransactionService.swift */,
+				BA364C7A200CE2F700C06877 /* KeystoreServiceProtocol.swift */,
+				BA364C78200CE2D900C06877 /* KeystoreService.swift */,
+				BAF64E69201DDDF000B4BDD0 /* QRCodeServiceProtocol.swift */,
+				BAF64E6B201DDDFA00B4BDD0 /* QRCodeService.swift */,
+				BAF64E76201E130B00B4BDD0 /* BalanceServiceProtocol.swift */,
+				BAF64E74201E12FC00B4BDD0 /* BalanceService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BA364C7C200CE3A900C06877 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BA364C7D200CE3D300C06877 /* Chain.swift */,
+				BA364C7F200CE41100C06877 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BA364C81200CE49B00C06877 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BA364C82200CE4C500C06877 /* Ethereum.swift */,
+				BA364C84200CE51100C06877 /* SyncCoordinatorDelegate.swift */,
+				BA364C86200CE54900C06877 /* SyncCoordinatorProtocol.swift */,
+				BA2B85F5200D760A00FDFA85 /* StandardSyncCoordinator.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		BA73B130200B819E0091F050 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +156,31 @@
 			isa = PBXGroup;
 			children = (
 				BA73B13C200B819E0091F050 /* AppDelegate.swift */,
+				BAF64E65201D6DB700B4BDD0 /* TabBarController.swift */,
+				BA364C88200CE5C800C06877 /* Errors.swift */,
 				BA73B13E200B819E0091F050 /* BalanceViewController.swift */,
+				BAF64E6D201E04D500B4BDD0 /* WalletInfoTableViewCell.swift */,
+				BA364C8A200CED4200C06877 /* SendViewController.swift */,
+				BAF64E67201D6E8900B4BDD0 /* ReceiveViewController.swift */,
+				BA364C8C200D661100C06877 /* Token.swift */,
+				BA364C7C200CE3A900C06877 /* Constants */,
+				BA364C73200CE13F00C06877 /* Service */,
+				BA364C81200CE49B00C06877 /* Core */,
+				BAF64E6F201E100000B4BDD0 /* API */,
 				BA73B143200B819E0091F050 /* Assets.xcassets */,
 				BA73B145200B819E0091F050 /* LaunchScreen.storyboard */,
 				BA73B148200B819E0091F050 /* Info.plist */,
 			);
 			path = mOOOnWallet;
+			sourceTree = "<group>";
+		};
+		BAF64E6F201E100000B4BDD0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BAF64E70201E101100B4BDD0 /* API.swift */,
+				BAF64E72201E103F00B4BDD0 /* API+Etherscan.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,13 +259,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mOOOnWallet-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A279C3207FEB20643B960B66 /* [CP] Embed Pods Frameworks */ = {
@@ -176,9 +277,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mOOOnWallet/Pods-mOOOnWallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -207,8 +315,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF64E77201E130B00B4BDD0 /* BalanceServiceProtocol.swift in Sources */,
+				BA364C77200CE2AD00C06877 /* TransactionServiceProtocol.swift in Sources */,
+				BAF64E66201D6DB700B4BDD0 /* TabBarController.swift in Sources */,
+				BAF64E75201E12FC00B4BDD0 /* BalanceService.swift in Sources */,
+				BA364C8D200D661100C06877 /* Token.swift in Sources */,
+				BAF64E6C201DDDFA00B4BDD0 /* QRCodeService.swift in Sources */,
+				BAF64E6A201DDDF000B4BDD0 /* QRCodeServiceProtocol.swift in Sources */,
+				BA364C7B200CE2F700C06877 /* KeystoreServiceProtocol.swift in Sources */,
+				BA364C7E200CE3D300C06877 /* Chain.swift in Sources */,
+				BA364C75200CE15F00C06877 /* TransactionService.swift in Sources */,
+				BAF64E6E201E04D500B4BDD0 /* WalletInfoTableViewCell.swift in Sources */,
+				BA364C89200CE5C800C06877 /* Errors.swift in Sources */,
 				BA73B13F200B819E0091F050 /* BalanceViewController.swift in Sources */,
+				BA364C87200CE54900C06877 /* SyncCoordinatorProtocol.swift in Sources */,
 				BA73B13D200B819E0091F050 /* AppDelegate.swift in Sources */,
+				BAF64E71201E101100B4BDD0 /* API.swift in Sources */,
+				BA364C79200CE2D900C06877 /* KeystoreService.swift in Sources */,
+				BA364C80200CE41100C06877 /* Constants.swift in Sources */,
+				BAF64E73201E103F00B4BDD0 /* API+Etherscan.swift in Sources */,
+				BAF64E68201D6E8900B4BDD0 /* ReceiveViewController.swift in Sources */,
+				BA364C85200CE51100C06877 /* SyncCoordinatorDelegate.swift in Sources */,
+				BA2B85F6200D760A00FDFA85 /* StandardSyncCoordinator.swift in Sources */,
+				BA364C8B200CED4200C06877 /* SendViewController.swift in Sources */,
+				BA364C83200CE4C500C06877 /* Ethereum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +388,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -280,6 +411,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -315,6 +447,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

@@ -8,6 +8,7 @@
 
 import UIKit
 import LocalAuthentication
+import Geth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,8 +34,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupMainController() {
-        let mainController = BalanceViewController()
-        self.window?.rootViewController = mainController
+        let tabBarController = TabBarController()
+        
+        let balanceViewController = BalanceViewController()
+        balanceViewController.tabBarItem = UITabBarItem(title: "Balance", image: nil, tag: 1)
+        balanceViewController.tabBarItem
+            .setTitleTextAttributes([NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 15)],
+                                    for: .normal)
+        
+        let sendViewController = SendViewController()
+        sendViewController.tabBarItem = UITabBarItem(title: "Send", image: nil, tag: 1)
+        sendViewController.tabBarItem
+            .setTitleTextAttributes([NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 15)],
+                                    for: .normal)
+        
+        let receiveViewController = ReceiveViewController()
+        receiveViewController.tabBarItem = UITabBarItem(title: "Receive", image: nil, tag: 1)
+        receiveViewController.tabBarItem
+            .setTitleTextAttributes([NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 15)],
+                                    for: .normal)
+        
+        tabBarController.addChildViewController(balanceViewController)
+        tabBarController.addChildViewController(sendViewController)
+        tabBarController.addChildViewController(receiveViewController)
+        
+        self.window?.rootViewController = tabBarController
     }
     
     func presentLocalAuth() {

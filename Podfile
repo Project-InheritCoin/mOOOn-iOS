@@ -5,4 +5,5 @@ use_frameworks!
 target 'mOOOnWallet' do
   pod 'Geth', '~> 1.7.3'
   pod 'RealmSwift','~> 3.0.2'
+  pod ‘Alamofire’,'~> 4.6.0’
 end

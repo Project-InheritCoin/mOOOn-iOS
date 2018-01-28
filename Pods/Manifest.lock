@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.6.0)
   - Geth (1.7.3)
   - Realm (3.0.2):
     - Realm/Headers (= 3.0.2)
@@ -7,14 +8,16 @@ PODS:
     - Realm (= 3.0.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.6.0)
   - Geth (~> 1.7.3)
   - RealmSwift (~> 3.0.2)
 
 SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Geth: 45a08eeef7a20e58dfc09a455563ffe210941a96
   Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
   RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
 
-PODFILE CHECKSUM: a6aac104e40cabc0a9ce148cd20ef448849910ed
+PODFILE CHECKSUM: 4d36947b7b81f6c5bb8046ac12e8c0fbc30083fb
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0
